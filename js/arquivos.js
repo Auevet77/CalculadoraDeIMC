@@ -1,6 +1,6 @@
 function CalcularIMC(){
     let peso = $('peso');
-    let altura = parseFloat(prompt("Digite sua altura (m):"));
+    let altura = $('altura');
     let imc = 0;
     let resultado;
 
