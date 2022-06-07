@@ -1,0 +1,14 @@
+h1{
+    color: blue;
+}
+
+label{
+    float: left;
+    color: green;
+    margin: 20px;
+}
+
+input{
+    float: left;
+    margin: 20px;
+}
