@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="text/javascript" src="js/arquivos.js"></script> -->
     <title>Calculadora de IMC</title>
 </head>
     <h1>Calculadora de IMC</h1>
 
     <label for="peso">Informe seu peso (kg)</label>
-    <input type="text" class="" id="peso">
+    <input type="text" class="peso" id="peso">
 
     <label for="altura">Informe sua altura (metro)</label>
-    <input type="text" class="" id="altura">
+    <input type="text" class="altura" id="altura">
 
     <input type="button" name="btnCalcular" id="btnCalcular" value="Calcular" onclick="CalcularIMC();">
 
+    <div id="erro" class="modal">
+        <p>Aqui vão aparecer os erros!</p>
+    </div>
 
+    <div id="resultado" class="modal">
+        <p>Aqui vão aparecer o resultado</p>
+    </div>
 
 
 
