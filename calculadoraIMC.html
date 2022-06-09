@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script type="text/javascript" src="js/arquivos.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet"> 
     <title>Calculadora de IMC</title>
 </head>
     <h1>Calculadora de IMC</h1>
-
-    <label for="peso">Informe seu peso (kg)</label>
-    <input type="text" class="peso" id="peso">
-
-    <label for="altura">Informe sua altura (metro)</label>
-    <input type="text" class="altura" id="altura">
-
+    <div>
+        <label for="peso" class="center">Informe seu peso (kg)</label>
+        <input type="text" class="peso" id="peso" class="center">
+    </div>
+    <div>
+        <label for="altura" class="center">Informe sua altura (metro)</label>
+        <input type="text" class="altura" id="altura" class="center">
+    </div>
     <input type="button" name="btnCalcular" id="btnCalcular" value="Calcular" onclick="CalcularIMC();">
 
     <div id="erro" class="modal">
@@ -22,6 +25,10 @@
     </div>
 
     <div id="resultado" class="modal">
+        <p>Aqui vão aparecer o resultado</p>
+    </div>
+
+    <div id="zero" class="modal">
         <p>Aqui vão aparecer o resultado</p>
     </div>
 

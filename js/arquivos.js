@@ -41,6 +41,18 @@ function CalcularIMC(){
             erro += "- O campo altura é obrigatório!<br>";
         }
 
+        if(peso == 0 || altura == 0){
+            //coloca o conteúdo na div erro
+            $('#zero').html("ATENÇÃO!<br><br>O peso ou a altura não podem ser 0 (zero)");
+            //exibe o modal
+            $('#zero').modal({
+                fadeDuration: 1000
+            });
+
+            return false;
+
+        }
+
         if (erro != ""){
             //coloca o conteúdo na div erro
             $('#erro').html("ATENÇÃO!<br><br>" + erro);
@@ -61,7 +73,7 @@ function CalcularIMC(){
 
 $(document).ready(function(){
     $('.peso').mask('000.000', {reverse: true});
-    $('.altura').mask('000.00', {reverse: true});
+    $('.altura').mask('00.00', {reverse: true});
 	$('.date').mask('00/00/0000');
 	$('.time').mask('00:00:00');
 	$('.date_time').mask('00/00/0000 00:00:00');

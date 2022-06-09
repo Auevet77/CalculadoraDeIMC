@@ -1,14 +1,30 @@
 h1{
+    display: flex;
+    justify-content: center;
     color: blue;
 }
 
 label{
-    float: left;
     color: green;
     margin: 20px;
 }
 
 input{
-    float: left;
+    color: green;
     margin: 20px;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
 }
